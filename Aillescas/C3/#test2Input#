@@ -1,0 +1,17 @@
+code:
+  start:
+    '#':
+      move: right
+      state: replace
+  replace:
+    '0':
+      write: '1'
+      move: right
+    '1':
+      state: end
+    ' ':
+      write: '#'
+      state: end
+tapes:
+  3: '#0'
+  4: '#1'self.
